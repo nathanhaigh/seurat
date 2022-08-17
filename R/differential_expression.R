@@ -1791,7 +1791,7 @@ MASTDETest <- function(
   }
   group.info <- data.frame(row.names = c(cells.1, cells.2))
   latent.vars <- latent.vars %||% group.info
-  # NH: I've switched the Group1/2's around in order to have fold changes reflect Group2 vs Group1 in the fold changes.
+  # I've switched the Group1/2's around in order to have fold changes reflect Group2 vs Group1 in the fold changes.
   # Group1 is used as reference group in this MAST code below, but in Seurat::FindMarkers, cells.2
   # is usually used to refer to the control group for other methods, which is a bit confusing.
   group.info[cells.1, "group"] <- "Group2"
@@ -1812,7 +1812,7 @@ MASTDETest <- function(
   cond <- factor(x = SummarizedExperiment::colData(sca)$group)
   cond <- relevel(x = cond, ref = "Group1")
   SummarizedExperiment::colData(sca)$condition <- cond
-  # NH: Add in calculation for cellular detection rate and include this into model as well. This should further help to
+  # Add in calculation for cellular detection rate and include this into model as well. This should further help to
   # improve estimates of fold change, whilst taking into account the number of genes in which a cell is actually expressed or "on".
   cdr <- colSums(SummarizedExperiment::assay(sca)>0)
   SummarizedExperiment::colData(sca)$ngeneson <- scale(cdr)
@@ -1823,7 +1823,7 @@ MASTDETest <- function(
   summaryCond <- MAST::summary(object = zlmCond, doLRT = 'conditionGroup2')
   summaryDt <- summaryCond$datatable
 
-  #NH: Rather than only returning p-values we return a data.frame of all summary statistics for Hurdle model that will be relevant.
+  # Rather than only returning p-values we return a data.frame of all summary statistics for Hurdle model that will be relevant.
   # Im also returning the confidence internvals for the fold change too as why not if we went to the trouble of calculating them...
   fcHurdle <- merge(summaryDt[summaryDt$contrast=="conditionGroup2" & summaryDt$component == "H", c("primerid", "Pr(>Chisq)")],
                     summaryDt[summaryDt$contrast=="conditionGroup2" & summaryDt$component == "logFC", c("primerid", "coef", "ci.hi", "ci.lo")])
