@@ -2,9 +2,9 @@
 % Please edit documentation in R/zzz.R
 \docType{package}
 \name{Seurat-package}
-\alias{Seurat}
-\alias{Seurat-package}
-\title{Seurat: Tools for Single Cell Genomics}
+\alias{AlkaSeurat}
+\alias{AlkaSeurat-package}
+\title{AlkaSeurat: Tools for Single Cell Genomics}
 \description{
 A toolkit for quality control, analysis, and exploration of single cell RNA sequencing data. 'Seurat' aims to enable users to identify and interpret sources of heterogeneity from single cell transcriptomic measurements, and to integrate diverse types of single cell data. See Satija R, Farrell J, Gennert D, et al (2015) \doi{10.1038/nbt.3192}, Macosko E, Basu A, Satija R, et al (2015) \doi{10.1016/j.cell.2015.05.002}, Stuart T, Butler A, et al (2019) \doi{10.1016/j.cell.2019.05.031}, and Hao, Hao, et al (2020) \doi{10.1101/2020.10.12.335331} for more details.
 }

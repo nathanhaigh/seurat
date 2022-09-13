@@ -2,122 +2,122 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 RunModularityClusteringCpp <- function(SNN, modularityFunction, resolution, algorithm, nRandomStarts, nIterations, randomSeed, printOutput, edgefilename) {
-    .Call('_Seurat_RunModularityClusteringCpp', PACKAGE = 'Seurat', SNN, modularityFunction, resolution, algorithm, nRandomStarts, nIterations, randomSeed, printOutput, edgefilename)
+    .Call('_AlkaSeurat_RunModularityClusteringCpp', PACKAGE = 'AlkaSeurat', SNN, modularityFunction, resolution, algorithm, nRandomStarts, nIterations, randomSeed, printOutput, edgefilename)
 }
 
 RunUMISampling <- function(data, sample_val, upsample = FALSE, display_progress = TRUE) {
-    .Call('_Seurat_RunUMISampling', PACKAGE = 'Seurat', data, sample_val, upsample, display_progress)
+    .Call('_AlkaSeurat_RunUMISampling', PACKAGE = 'AlkaSeurat', data, sample_val, upsample, display_progress)
 }
 
 RunUMISamplingPerCell <- function(data, sample_val, upsample = FALSE, display_progress = TRUE) {
-    .Call('_Seurat_RunUMISamplingPerCell', PACKAGE = 'Seurat', data, sample_val, upsample, display_progress)
+    .Call('_AlkaSeurat_RunUMISamplingPerCell', PACKAGE = 'AlkaSeurat', data, sample_val, upsample, display_progress)
 }
 
 RowMergeMatrices <- function(mat1, mat2, mat1_rownames, mat2_rownames, all_rownames) {
-    .Call('_Seurat_RowMergeMatrices', PACKAGE = 'Seurat', mat1, mat2, mat1_rownames, mat2_rownames, all_rownames)
+    .Call('_AlkaSeurat_RowMergeMatrices', PACKAGE = 'AlkaSeurat', mat1, mat2, mat1_rownames, mat2_rownames, all_rownames)
 }
 
 LogNorm <- function(data, scale_factor, display_progress = TRUE) {
-    .Call('_Seurat_LogNorm', PACKAGE = 'Seurat', data, scale_factor, display_progress)
+    .Call('_AlkaSeurat_LogNorm', PACKAGE = 'AlkaSeurat', data, scale_factor, display_progress)
 }
 
 Standardize <- function(mat, display_progress = TRUE) {
-    .Call('_Seurat_Standardize', PACKAGE = 'Seurat', mat, display_progress)
+    .Call('_AlkaSeurat_Standardize', PACKAGE = 'AlkaSeurat', mat, display_progress)
 }
 
 FastSparseRowScale <- function(mat, scale = TRUE, center = TRUE, scale_max = 10, display_progress = TRUE) {
-    .Call('_Seurat_FastSparseRowScale', PACKAGE = 'Seurat', mat, scale, center, scale_max, display_progress)
+    .Call('_AlkaSeurat_FastSparseRowScale', PACKAGE = 'AlkaSeurat', mat, scale, center, scale_max, display_progress)
 }
 
 FastSparseRowScaleWithKnownStats <- function(mat, mu, sigma, scale = TRUE, center = TRUE, scale_max = 10, display_progress = TRUE) {
-    .Call('_Seurat_FastSparseRowScaleWithKnownStats', PACKAGE = 'Seurat', mat, mu, sigma, scale, center, scale_max, display_progress)
+    .Call('_AlkaSeurat_FastSparseRowScaleWithKnownStats', PACKAGE = 'AlkaSeurat', mat, mu, sigma, scale, center, scale_max, display_progress)
 }
 
 FastCov <- function(mat, center = TRUE) {
-    .Call('_Seurat_FastCov', PACKAGE = 'Seurat', mat, center)
+    .Call('_AlkaSeurat_FastCov', PACKAGE = 'AlkaSeurat', mat, center)
 }
 
 FastCovMats <- function(mat1, mat2, center = TRUE) {
-    .Call('_Seurat_FastCovMats', PACKAGE = 'Seurat', mat1, mat2, center)
+    .Call('_AlkaSeurat_FastCovMats', PACKAGE = 'AlkaSeurat', mat1, mat2, center)
 }
 
 FastRBind <- function(mat1, mat2) {
-    .Call('_Seurat_FastRBind', PACKAGE = 'Seurat', mat1, mat2)
+    .Call('_AlkaSeurat_FastRBind', PACKAGE = 'AlkaSeurat', mat1, mat2)
 }
 
 FastExpMean <- function(mat, display_progress) {
-    .Call('_Seurat_FastExpMean', PACKAGE = 'Seurat', mat, display_progress)
+    .Call('_AlkaSeurat_FastExpMean', PACKAGE = 'AlkaSeurat', mat, display_progress)
 }
 
 SparseRowVar2 <- function(mat, mu, display_progress) {
-    .Call('_Seurat_SparseRowVar2', PACKAGE = 'Seurat', mat, mu, display_progress)
+    .Call('_AlkaSeurat_SparseRowVar2', PACKAGE = 'AlkaSeurat', mat, mu, display_progress)
 }
 
 SparseRowVarStd <- function(mat, mu, sd, vmax, display_progress) {
-    .Call('_Seurat_SparseRowVarStd', PACKAGE = 'Seurat', mat, mu, sd, vmax, display_progress)
+    .Call('_AlkaSeurat_SparseRowVarStd', PACKAGE = 'AlkaSeurat', mat, mu, sd, vmax, display_progress)
 }
 
 FastLogVMR <- function(mat, display_progress) {
-    .Call('_Seurat_FastLogVMR', PACKAGE = 'Seurat', mat, display_progress)
+    .Call('_AlkaSeurat_FastLogVMR', PACKAGE = 'AlkaSeurat', mat, display_progress)
 }
 
 RowVar <- function(x) {
-    .Call('_Seurat_RowVar', PACKAGE = 'Seurat', x)
+    .Call('_AlkaSeurat_RowVar', PACKAGE = 'AlkaSeurat', x)
 }
 
 SparseRowVar <- function(mat, display_progress) {
-    .Call('_Seurat_SparseRowVar', PACKAGE = 'Seurat', mat, display_progress)
+    .Call('_AlkaSeurat_SparseRowVar', PACKAGE = 'AlkaSeurat', mat, display_progress)
 }
 
 ReplaceColsC <- function(mat, col_idx, replacement) {
-    .Call('_Seurat_ReplaceColsC', PACKAGE = 'Seurat', mat, col_idx, replacement)
+    .Call('_AlkaSeurat_ReplaceColsC', PACKAGE = 'AlkaSeurat', mat, col_idx, replacement)
 }
 
 GraphToNeighborHelper <- function(mat) {
-    .Call('_Seurat_GraphToNeighborHelper', PACKAGE = 'Seurat', mat)
+    .Call('_AlkaSeurat_GraphToNeighborHelper', PACKAGE = 'AlkaSeurat', mat)
 }
 
 fast_dist <- function(x, y, n) {
-    .Call('_Seurat_fast_dist', PACKAGE = 'Seurat', x, y, n)
+    .Call('_AlkaSeurat_fast_dist', PACKAGE = 'AlkaSeurat', x, y, n)
 }
 
 FindWeightsC <- function(cells2, distances, anchor_cells2, integration_matrix_rownames, cell_index, anchor_score, min_dist, sd, display_progress) {
-    .Call('_Seurat_FindWeightsC', PACKAGE = 'Seurat', cells2, distances, anchor_cells2, integration_matrix_rownames, cell_index, anchor_score, min_dist, sd, display_progress)
+    .Call('_AlkaSeurat_FindWeightsC', PACKAGE = 'AlkaSeurat', cells2, distances, anchor_cells2, integration_matrix_rownames, cell_index, anchor_score, min_dist, sd, display_progress)
 }
 
 IntegrateDataC <- function(integration_matrix, weights, expression_cells2) {
-    .Call('_Seurat_IntegrateDataC', PACKAGE = 'Seurat', integration_matrix, weights, expression_cells2)
+    .Call('_AlkaSeurat_IntegrateDataC', PACKAGE = 'AlkaSeurat', integration_matrix, weights, expression_cells2)
 }
 
 ScoreHelper <- function(snn, query_pca, query_dists, corrected_nns, k_snn, subtract_first_nn, display_progress) {
-    .Call('_Seurat_ScoreHelper', PACKAGE = 'Seurat', snn, query_pca, query_dists, corrected_nns, k_snn, subtract_first_nn, display_progress)
+    .Call('_AlkaSeurat_ScoreHelper', PACKAGE = 'AlkaSeurat', snn, query_pca, query_dists, corrected_nns, k_snn, subtract_first_nn, display_progress)
 }
 
 ComputeSNN <- function(nn_ranked, prune) {
-    .Call('_Seurat_ComputeSNN', PACKAGE = 'Seurat', nn_ranked, prune)
+    .Call('_AlkaSeurat_ComputeSNN', PACKAGE = 'AlkaSeurat', nn_ranked, prune)
 }
 
 WriteEdgeFile <- function(snn, filename, display_progress) {
-    invisible(.Call('_Seurat_WriteEdgeFile', PACKAGE = 'Seurat', snn, filename, display_progress))
+    invisible(.Call('_AlkaSeurat_WriteEdgeFile', PACKAGE = 'AlkaSeurat', snn, filename, display_progress))
 }
 
 DirectSNNToFile <- function(nn_ranked, prune, display_progress, filename) {
-    .Call('_Seurat_DirectSNNToFile', PACKAGE = 'Seurat', nn_ranked, prune, display_progress, filename)
+    .Call('_AlkaSeurat_DirectSNNToFile', PACKAGE = 'AlkaSeurat', nn_ranked, prune, display_progress, filename)
 }
 
 SNN_SmallestNonzero_Dist <- function(snn, mat, n, nearest_dist) {
-    .Call('_Seurat_SNN_SmallestNonzero_Dist', PACKAGE = 'Seurat', snn, mat, n, nearest_dist)
+    .Call('_AlkaSeurat_SNN_SmallestNonzero_Dist', PACKAGE = 'AlkaSeurat', snn, mat, n, nearest_dist)
 }
 
 row_sum_dgcmatrix <- function(x, i, rows, cols) {
-    .Call('_Seurat_row_sum_dgcmatrix', PACKAGE = 'Seurat', x, i, rows, cols)
+    .Call('_AlkaSeurat_row_sum_dgcmatrix', PACKAGE = 'AlkaSeurat', x, i, rows, cols)
 }
 
 row_mean_dgcmatrix <- function(x, i, rows, cols) {
-    .Call('_Seurat_row_mean_dgcmatrix', PACKAGE = 'Seurat', x, i, rows, cols)
+    .Call('_AlkaSeurat_row_mean_dgcmatrix', PACKAGE = 'AlkaSeurat', x, i, rows, cols)
 }
 
 row_var_dgcmatrix <- function(x, i, rows, cols) {
-    .Call('_Seurat_row_var_dgcmatrix', PACKAGE = 'Seurat', x, i, rows, cols)
+    .Call('_AlkaSeurat_row_var_dgcmatrix', PACKAGE = 'AlkaSeurat', x, i, rows, cols)
 }
 

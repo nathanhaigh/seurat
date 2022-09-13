@@ -6803,7 +6803,7 @@ ShinyBrush <- function(plot.data, brush, outputs, inverts = character(length = 0
   return(selected)
 }
 
-globalVariables(names = '..density..', package = 'Seurat')
+globalVariables(names = '..density..', package = 'AlkaSeurat')
 #' A single correlation plot
 #'
 #' @param data A data frame with two columns to be plotted
