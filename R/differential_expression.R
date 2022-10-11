@@ -1820,7 +1820,7 @@ MASTDETest <- function(
     object = paste0(" ~ ", "ngeneson+", paste(latent.vars.names, collapse = "+"))
   )
   zlmCond <- MAST::zlm(formula = fmla, sca = sca, ...)
-  summaryCond <- MAST::summary(object = zlmCond, doLRT = 'conditionGroup2')
+  summaryCond <- MAST::summary(object = zlmCond, doLRT = 'conditionGroup2', parallel = TRUE)
   summaryDt <- summaryCond$datatable
 
   #NH: Rather than only returning p-values we return a data.frame of all summary statistics for Hurdle model that will be relevant.
